@@ -1,4 +1,4 @@
-# pi2test by Alex Eames of RasPi.TV
+# pi2test by Alex Eames of RasPi.TV Shared under CC BY-SA 3.0 license
 Scripts for hammering CPUs on Pi 2 and other computers
 
 This was designed for testing multicore performance on the Raspberry Pi 2
