@@ -21,7 +21,7 @@ clean_lines = [x.strip() for x in results] # takes out the /n line ends
 
 results = clean_lines
 
-target = open("/home/pi/sortedwordlist.txt", 'w')
+target = open("sortedwordlist.txt", 'w')
 
 target.truncate() # bin the old file if it exists
 
@@ -34,11 +34,11 @@ for i in range(len(results)):
 target.close()
 
 # Sort the lines in the file alphabetically
-results = list(open("/home/pi/sortedwordlist.txt", "r"))
+results = list(open("sortedwordlist.txt", "r"))
 
 results = sorted(results)              # alphabetical sort
 
-target = open("/home/pi/sortedwordlist2.txt", 'w')
+target = open("sortedwordlist2.txt", 'w')
 
 target.truncate() # bin the old file if it exists
 
