@@ -5,10 +5,10 @@
 # This program works with the scrabble/words with friends word list wordlist.txt
 # The file is modified so each line contains an alphabetically sorted version of  
 # each word, then the word itself. e.g. abeprrrsy, raspberry 
-# and stored as /home/pi/sortedwordlist.txt
+# and stored as sortedwordlist.txt
 
 # The whole file (line order) is then alphabetically sorted and stored as  
-# (/home/pi/sortedwordlist2.txt) 
+# (sortedwordlist2.txt) 
 # It's a bit of a hack, but makes for much more efficient anagram searching.
 
 import time
@@ -16,7 +16,7 @@ start_time = time.time()
 print "Starting now..."
 
 # Open the word list file and read it into a Python list
-results = list(open("/home/pi/wordlist.txt", "r"))
+results = list(open("wordlist.txt", "r"))
 clean_lines = [x.strip() for x in results] # takes out the /n line ends
 
 results = clean_lines
