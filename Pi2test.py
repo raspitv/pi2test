@@ -5,7 +5,7 @@ import time
 from subprocess import call
 from threading import Thread
 
-cmd = "python /home/pi/presort.py"  # customise this command
+cmd = "python presort.py"  # customise this command
 
 def process_thread(i):
     print "Thread: %d" % i
